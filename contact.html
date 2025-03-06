@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Website</title>
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css bootstrap link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+
+  <body>
+    <div
+      class="alert alert-dark bg-dark text-white text-center mb-0 rounded-0"
+      role="alert"
+    >
+      <i class="fa-solid fa-tag"></i>
+      Sweet Deal Alert! Enjoy 20% OFF on All Cakes This Week Only! 🎂 Don't Miss
+      Out—Order Now and Treat Yourself to a Fluffy Delight!
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light d-flex nav-bg" id="home">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder nav-logo" href="./index.html#home"
+          >Fluffy Delights</a
+        >
+        <button
+          class="navbar-toggler hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-dark fs-3"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse nav-ul"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 nav-links">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./index.html#cake"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cakes
+              </a>
+              <ul
+                class="dropdown-menu cake-drop"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="./index.html#collection"
+                    >By Occasion</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#custom"
+                    >Custom Cakes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#premium"
+                    >Premium Cakes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#vegan"
+                    >Vegan & Gluten-Free</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#seasonal">
+                    Seasonal Specials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#design"
+                    >Cakes Design</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Custom Cakes
+              </a>
+              <ul
+                class="dropdown-menu cake-drop"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="./index.html#design"
+                    >Design Your Cake</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#request"
+                    >Custom Requests</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#faq">FAQs</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./order.html">Order Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-primary me-3 nav-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign Up
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-primary nav-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- modal  -->
+
+    <!-- login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5
+              class="modal-title w-100 text-center fw-bold"
+              id="loginModalLabel"
+            >
+              Login
+            </h5>
+            <button
+              type="button"
+              class="btn-close pe-4 pt-1"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="staticEmail" class="col-form-label">Email</label>
+            <div class="border border-1 rounded-pill p-1">
+              <input
+                type="text"
+                class="form-control-plaintext ps-4"
+                id="staticEmail"
+                placeholder="email@example.com"
+              />
+            </div>
+
+            <label for="inputPassword" class="col-form-label">Password</label>
+            <div>
+              <input
+                type="password"
+                class="form-control ps-4 rounded-pill p-2"
+                id="inputPassword"
+              />
+            </div>
+          </div>
+          <div
+            class="modal-footer border-top-0 d-flex justify-content-center w-100"
+          >
+            <button
+              type="button"
+              class="btn btn-outline-danger w-25 rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-success w-25 rounded-pill">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign up Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5
+              class="modal-title w-100 text-center fw-bold"
+              id="signupModalLabel"
+            >
+              Sign Up
+            </h5>
+            <button
+              type="button"
+              class="btn-close pe-4 pt-1"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <label for="fname" class="col-form-label">First Name</label>
+              <div>
+                <input
+                  type="text"
+                  class="form-control ps-4 rounded-pill p-2"
+                  id="fname"
+                />
+              </div>
+              <label for="lname" class="col-form-label">Last Name</label>
+              <div>
+                <input
+                  type="text"
+                  class="form-control ps-4 rounded-pill p-2"
+                  id="lname"
+                />
+              </div>
+              <label for="date" class="col-form-label">Birth Date</label>
+              <div>
+                <input
+                  type="date"
+                  class="form-control ps-4 rounded-pill p-2"
+                  id="date"
+                />
+              </div>
+              <label for="date" class="col-form-label">Gender</label>
+              <div class="d-flex justify-content-evenly">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="male"
+                  />
+                  <label class="form-check-label" for="male"> Male </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="female"
+                    checked
+                  />
+                  <label class="form-check-label" for="female"> Female </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="other"
+                    checked
+                  />
+                  <label class="form-check-label" for="other"> Other </label>
+                </div>
+              </div>
+              <label for="number" class="col-form-label">Contact Number</label>
+              <div>
+                <input
+                  type="text"
+                  class="form-control ps-4 rounded-pill p-2"
+                  id="number"
+                />
+              </div>
+              <label for="email" class="col-form-label">Email</label>
+              <div class="border border-1 rounded-pill p-1">
+                <input
+                  type="text"
+                  class="form-control-plaintext ps-4"
+                  id="email"
+                  placeholder="email@example.com"
+                />
+              </div>
+
+              <label for="inputPassword" class="col-form-label">Password</label>
+              <div>
+                <input
+                  type="password"
+                  maxlength="15"
+                  class="form-control ps-4 rounded-pill p-2"
+                  id="inputPassword"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-top-0">
+            <form action="" class="w-100 d-flex justify-content-center">
+              <button
+                type="reset"
+                class="btn btn-outline-danger w-25 rounded-pill"
+              >
+                Reset
+              </button>
+              <button type="submit" class="btn btn-success w-25 rounded-pill">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------  -->
+
+    <section>
+      <div class="container-fluid px-5">
+        <div class="row pt-5">
+          <div class="col-lg-12">
+            <h1 class="fw-bold">Contact Us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="fs-4 pt-3">
+              Have questions, feedback, or special requests? We’d love to hear
+              from you! Use the contact details below or fill out the form to
+              get in touch with the Fluffy Delight team. We’re here to help you
+              with all your cake needs.
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-12">
+            <h2 class="fw-bold">Get in Touch</h2>
+          </div>
+        </div>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
+          <div class="feature col">
+            <div
+              class="feature-icon bg-warning bg-gradient w-25 text-center text-dark rounded-pill m-auto"
+            >
+              <i class="fa-solid fa-location-dot p-4 fs-1"></i>
+            </div>
+            <h3 class="pt-4">Address</h3>
+            <p class="fs-5">123 Cake Avenue, Dessert City, CA 90210</p>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon bg-warning bg-gradient w-25 text-center text-dark rounded-pill m-auto"
+            >
+              <i class="fa-solid fa-phone p-4 fs-1"></i>
+            </div>
+            <h3 class="pt-4">Phone:</h3>
+            <p class="fs-5">
+              (123) 456-7890 <br />Our customer service team is available Monday
+              to Friday, 9 AM to 6 PM.
+            </p>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon bg-warning bg-gradient w-25 text-center text-dark rounded-pill m-auto"
+            >
+              <i class="fa-solid fa-envelope p-4 fs-1"></i>
+            </div>
+            <h3 class="pt-4">Email:</h3>
+            <p class="fs-5">
+              info@fluffydelight.com <br />For general inquiries or to place an
+              order.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid px-5 bg-danger text-white">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="fw-bold text-center pt-5">Social Media</h1>
+            <p class="fs-5 pt-3 text-center">
+              Follow us on our social media platforms for updates and specials
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <i class="fa-brands fa-linkedin fs-3 text-dark"></i>
+
+            <i class="fa-brands fa-youtube fs-3 text-dark"></i>
+
+            <i class="fa-brands fa-x-twitter fs-3 text-dark"></i>
+
+            <i class="fa-brands fa-facebook fs-3 text-dark"></i>
+
+            <i class="fa-brands fa-whatsapp fs-3 text-dark"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-white text-lg-start">
+      <div class="container-fluid bg-dark">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 p-0 text-center">
+            <h5 class="text-uppercase fw-bold">About Us</h5>
+            <p class="f-lh">
+              At Fluffy Delight, we bring joy to every occasion with our
+              exquisite cakes and delightful treats. Our passion for baking and
+              commitment to quality ensure that each creation is a masterpiece,
+              crafted with love and the finest ingredients.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled quick">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#collection" class="text-white text-decoration-none"
+                  >Cakes</a
+                >
+              </li>
+              <li>
+                <a href="#custom" class="text-white text-decoration-none"
+                  >Custom Cakes</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+            <h5 class="text-uppercase">Contact & Follow Us</h5>
+            <p class="f-lh">
+              123 Cake Avenue, Dessert City, CA 90210<br />
+              Phone: (123) 456-7890<br />
+              Email:
+              <a
+                href="mailto:info@fluffydelight.com"
+                class="text-decoration-none text-white"
+                >info@fluffydelight.com</a
+              >
+            </p>
+            <div class="social-icons">
+              <i class="fa-brands fa-linkedin pb-4"></i>
+              <i class="fa-brands fa-youtube pb-4"></i>
+              <i class="fa-brands fa-x-twitter pb-4"></i>
+              <i class="fa-brands fa-facebook pb-3"></i>
+              <i class="fa-brands fa-whatsapp pb-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3 bg-warning text-dark fw-bold fs-4">
+        © 2025 Fluffy Delight. All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

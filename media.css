@@ -1,0 +1,120 @@
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 70%;
+  }
+  .p-img {
+    width: 100%;
+    margin: auto;
+  }
+  iframe {
+    width: 95%;
+    height: 200px;
+  }
+  .alert {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 426px) {
+  html {
+    font-size: 70%;
+  }
+  .alert {
+    display: none;
+  }
+  .nav-links li a {
+    transition: none;
+  }
+  .nav-links li a:hover {
+    transform: none;
+  }
+  .nav-ul {
+    margin-left: 1.2rem;
+  }
+  .occasion-para {
+    font-size: 1rem;
+    padding-bottom: 0.5rem !important;
+  }
+  .occa-p {
+    font-size: 1.3rem;
+  }
+  .custom-para {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .custom-c {
+    height: 13rem;
+  }
+  .custom-c p {
+    line-height: 1.5rem;
+  }
+  .custom-p {
+    font-size: 1.2rem;
+  }
+  .premium-para {
+    font-size: 0.8rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+
+  .alert {
+    display: none;
+  }
+  .nav-ul ul {
+    font-size: 1.25rem;
+  }
+  .hamburger {
+    border: none;
+  }
+  .hamburger:focus {
+    border: none;
+    box-shadow: none;
+  }
+  .c-collection h1 {
+    font-size: 3rem;
+  }
+  .custom h1 {
+    font-size: 2rem;
+  }
+
+  .occasion h1 {
+    font-size: 2rem;
+  }
+  iframe {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  html {
+    font-size: 93%;
+  }
+  .nav-ul {
+    margin-left: 1.2rem;
+  }
+
+  .hamburger {
+    border: none;
+  }
+  .hamburger:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 910px) and (max-width: 1025px) {
+  html {
+    font-size: 84%;
+  }
+}
+@media only screen and (min-width: 1439px) {
+  html {
+    font-size: 116%;
+  }
+}
+@media only screen and (min-width: 2559px) {
+  html {
+    font-size: 197%;
+  }
+}

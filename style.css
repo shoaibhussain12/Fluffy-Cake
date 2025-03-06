@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  display: block;
+  height: 80vh;
+  object-fit: cover;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.nav-bg {
+  background-color: rgb(214, 241, 134) !important;
+}
+
+.nav-logo {
+  color: rgb(206, 3, 33) !important;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.nav-links li {
+  padding: 0 0.75rem;
+}
+.nav-links li a {
+  transition: all 0.2s ease-in;
+}
+.nav-links li a:hover {
+  transform: scale(1.3);
+}
+
+.nav-links li:hover {
+  color: #000000;
+}
+
+.nav-links li a {
+  color: #ce0321 !important;
+  font-weight: 600;
+}
+.nav-btn {
+  background-color: #ce0321 !important;
+  border: none;
+  width: 7rem;
+}
+
+.nav-btn:hover {
+  opacity: 0.7;
+}
+
+.nav-btn:active {
+  background-color: #ce0321 !important;
+  box-shadow: none !important;
+}
+.nav-customer {
+  display: none;
+}
+.cake-drop {
+  padding: 0;
+  background-color: rgb(214, 241, 134) !important;
+  top: 3.4rem;
+  border: 0;
+  border-radius: 0;
+  line-height: 2.5rem;
+}
+.cake-drop li {
+  padding: 0;
+}
+.cake-drop[data-bs-popper] {
+  top: 123%;
+}
+.cake-drop li a:hover {
+  top: 3.4rem;
+  background-color: rgb(247, 91, 104) !important;
+  color: #fff !important;
+}
+.c-collection {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 8rem;
+}
+.c-collection h1 {
+  color: #ce0321 !important;
+  font-size: 4rem;
+}
+.occasion h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.custom h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.occa-p {
+  font-size: 1.5rem;
+}
+.custom-p {
+  font-size: 1.5rem;
+}
+.custom-para {
+  font-size: 1rem;
+  width: 80%;
+  color: #ce0321 !important;
+}
+.premium-para {
+  font-size: 1rem;
+  color: #ce0321 !important;
+}
+.occasion-para {
+  font-size: 1.2rem;
+  color: #ce0321 !important;
+  text-align: center;
+}
+
+.custom-c {
+  height: 12rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(88, 2, 2, 0.9), rgba(59, 4, 4, 0.5)),
+    url(./custom-card-bg/background\ custom\ card.jpg);
+  background-size: cover;
+}
+.custom-c p {
+  line-height: 2rem;
+}
+.cust-card-h-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cust-card-h-icon i {
+  font-size: 1.5rem;
+}
+.cust-card-h {
+  font-size: 1.25rem;
+  width: 100%;
+}
+.idea {
+  background-color: rgba(127, 255, 204, 0.352);
+}
+.ideas h1:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.ideas h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.idea-img img {
+  height: 18rem;
+  object-fit: cover !important;
+  border-radius: 1.5rem !important;
+}
+.card-bg {
+  border-radius: 1.5rem !important;
+}
+.idea-img {
+  padding: 0 !important;
+  border: none !important;
+}
+.request-f {
+  background-color: rgba(255, 127, 202, 0.63);
+  font-weight: 500;
+}
+.request-f p {
+  line-height: 1.5rem;
+}
+.p-img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
+.vegan-bg {
+  background: #a9ce0362;
+}
+
+.faq-bg {
+  background: rgb(239, 180, 5);
+}
+.faq-bg:focus {
+  background: rgb(239, 180, 5);
+  box-shadow: none;
+  color: #000;
+}
+
+.ans-bg {
+  background: rgb(255, 255, 255);
+  color: #dd0909;
+}
+.accordion-button:not(.collapsed) {
+  background: rgb(239, 180, 5);
+  box-shadow: none;
+  color: #000;
+  box-shadow: none;
+}
+.accordion-item {
+  border: none;
+}
+.w-t {
+  font-size: 1.2rem;
+}
+.story {
+  width: 100%;
+  line-height: 1.75rem;
+  font-size: 1.1rem;
+}
+
+.mission-bg {
+  background-color: #2c2a2a;
+  color: #ffffff;
+  padding: 2rem;
+}
+.story-bg {
+  background-color: #d6f186;
+  color: #000000;
+  padding: 2rem;
+}
+.fa-landmark {
+  font-size: 5rem;
+}
+.fa-crosshairs {
+  font-size: 5rem;
+}
+
+.bg-1 {
+  height: 25rem;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(./about/fpc-1.jpg);
+  background-size: cover;
+}
+.bg-2 {
+  border-radius: 1rem;
+  height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(./about/fpc-2.webp);
+  background-size: cover;
+}
+.bg-3 {
+  border-radius: 1rem;
+  height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(./about/fpc-4.jpg);
+  background-size: cover;
+}
+.wwo-btn {
+  font-size: 1.2rem;
+  width: 17rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin: auto;
+}
+.icon {
+  font-size: 4rem;
+  padding: 2rem;
+  border-radius: 10rem;
+  background-color: rgb(247, 220, 132);
+  margin: 1rem 0;
+}
+.fa-face-smile {
+  background-color: rgb(247, 132, 155);
+}
+.fa-recycle {
+  background-color: rgb(132, 203, 247);
+}
+.t-img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+.t-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t-cb {
+  width: 26rem;
+}
+.form {
+  font-size: 1.2rem;
+}
+.form input {
+  padding: 1.25rem;
+  outline: none;
+  border-radius: 1rem;
+}
+.form input[type="radio"] {
+  padding: 0;
+  outline: none;
+}
+.form input[type="checkbox"] {
+  padding: 0;
+  outline: none;
+}
+.form input:focus {
+  box-shadow: none;
+  border: 1px solid black;
+  outline: none;
+}
+.form select {
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+.form select:focus {
+  box-shadow: none;
+  border: 1px solid black;
+  outline: none;
+}
+.form textarea {
+  padding: 1.25rem;
+}
+.form textarea:focus {
+  box-shadow: none;
+  border: 1px solid black;
+  outline: none;
+}
+.form button {
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1.2rem;
+  margin-top: 1.5rem;
+}
+.form {
+  width: 100%;
+}
+footer div:first-child {
+  padding: 3rem;
+}
+.fa-brands {
+  padding: 0 1rem 0 0;
+  font-size: 1.5rem;
+}
+.f-lh {
+  line-height: 2rem;
+}
+.quick {
+  line-height: 2rem;
+}
+
+/* custom scrollbar  */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ce0321;
+  height: 5rem;
+  border-radius: 2rem;
+}
+.modal-body input {
+  outline: none;
+}
+.modal-body input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-close:focus {
+  box-shadow: none;
+}
+.modal-width {
+  width: 75%;
+}
